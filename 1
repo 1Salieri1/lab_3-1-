@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _4545
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double F;
+            int x,y,z;
+            Console.Write("Enter x = ");
+            x = int.Parse(Console.ReadLine());
+            Console.Write("Enter y = ");
+            y = int.Parse(Console.ReadLine());
+            Console.Write("Enter z = ");
+            z = int.Parse(Console.ReadLine());
+            if (Math.Max(Math.Pow(x, 2), y) + Math.Pow(z, 3) == 0)
+            {
+                Console.WriteLine("Знаменник дорiвнює нулю!");
+            }
+            else
+            {
+                F = (Math.Min(x,y+z))/(Math.Max(Math.Pow(x, 2), y) + Math.Pow(z, 3));
+                Console.WriteLine("F = {0:f2}", F);
+            }
+
+        }
+    }
+}
